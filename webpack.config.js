@@ -8,7 +8,8 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
-    libraryTarget: 'commonjs'
+    library: "evoke-ui",
+    libraryTarget: "umd"
   },
   plugins: [new CleanWebpackPlugin()],
   module: {
